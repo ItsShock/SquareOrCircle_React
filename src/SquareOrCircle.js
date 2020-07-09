@@ -1,14 +1,7 @@
 import React from 'react';
 
-function App({isCircle}) {
-  let style = {width: '200px', height: '200px'}
-  if (isCircle) {
-    style = {width: '200px', height: '200px', borderRadius: '50%'}
-  }
+function App() {
 
-  return (
-    <div style={style}></div>
-  );
 }
 
 export default App;
