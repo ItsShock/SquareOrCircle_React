@@ -2,19 +2,21 @@ import React from 'react';
 
 const mySquare = {
     width: "200px",
-    height: "200px"
+    height: "200px",
+    backgroundColor: "#000",
 };
 
 const myCircle =
 {
     width: "200px",
     height: "200px",
-    borderRadius: "50%"
-}
+    borderRadius: "50%",
+    backgroundColor: "#000",
+};
 
-function App({isCircle}) {
-    return <div style={mySquare}></div>
+function SquareOrCircle({isCircle}) {
+    return <div style={isCircle ? myCircle : mySquare}></div>
     
 }
 
-export default App;
+export default SquareOrCircle;
