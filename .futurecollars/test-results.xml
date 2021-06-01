@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="4" failures="1" time="2.824">
+  <testsuite name="Button tests" errors="0" failures="1" skipped="0" timestamp="2021-06-01T15:54:17" time="1.787" tests="4">
+    <testcase classname="Button tests" name="Dodano poprawnie komponent SquareOrCircle" time="0.002">
+    </testcase>
+    <testcase classname="Button tests" name="SquareOrCircle ma domyślnie szerokość 200px" time="0.003">
+    </testcase>
+    <testcase classname="Button tests" name="SquareOrCircle ma domyślnie wysokość 200px" time="0">
+    </testcase>
+    <testcase classname="Button tests" name="Dodano parametr który przy wartości true sprawia, że element staje się okręgiem" time="0.002">
+      <failure>Error: expect(received).toHaveProperty(path, value)
+
+Expected path: &quot;borderRadius&quot;
+Received path: []
+
+Expected value: &quot;50%&quot;
+Received value: {&quot;height&quot;: &quot;200px&quot;, &quot;width&quot;: &quot;200px&quot;}
+    at Object.&lt;anonymous&gt; (C:\Users\Pjoter\AppData\Roaming\Code\User\globalStorage\leancode.future-collars\futurecollars\fe-react-02-05\src\SquareOrCircle.test.js:22:49)
+    at Object.asyncJestTest (C:\Users\Pjoter\AppData\Roaming\Code\User\globalStorage\leancode.future-collars\futurecollars\fe-react-02-05\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at C:\Users\Pjoter\AppData\Roaming\Code\User\globalStorage\leancode.future-collars\futurecollars\fe-react-02-05\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\Users\Pjoter\AppData\Roaming\Code\User\globalStorage\leancode.future-collars\futurecollars\fe-react-02-05\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at C:\Users\Pjoter\AppData\Roaming\Code\User\globalStorage\leancode.future-collars\futurecollars\fe-react-02-05\node_modules\jest-jasmine2\build\queueRunner.js:73:41
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

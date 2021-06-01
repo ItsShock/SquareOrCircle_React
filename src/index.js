@@ -4,7 +4,17 @@ import './index.css';
 import SquareOrCircle from './SquareOrCircle';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<SquareOrCircle />, document.getElementById('root'));
+const myCircle =
+{
+    borderRadius: "50%"
+}
+
+const mySquare = {
+    width: "200px",
+    height: "200px"
+};
+
+ReactDOM.render(<SquareOrCircle isCircle={true ? style={myCircle} : style={mySquare}}/>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
